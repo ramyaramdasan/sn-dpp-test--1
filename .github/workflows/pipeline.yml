@@ -26,7 +26,7 @@ jobs:
         id: publish_app
         uses: ServiceNow/sncicd-publish-app@1.0.0
         with:
-          versionFormat: detect_without_autoincrement
+          versionFormat: detect
         env:
           snowUsername: ${{ secrets.SN_USERNAME }}
           snowPassword: ${{ secrets.SN_PASSWORD }}
